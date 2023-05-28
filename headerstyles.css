@@ -18,20 +18,22 @@ header {
     font-family:Ubuntu, serif;
 }
 
-#logo {
+.logo-pic {
+    box-sizing: border-box;
     height:97%;
     width:auto;
     margin:1% 1% 1% 20px;
     border-radius:30px;
+    border:1.5px solid rgba(0, 0, 0, 0);
 }
 
-#navmenu {
+.navmenu {
     height:100%; 
     width:35%;
     display:flex;
+    flex-flow:row nowrap;
     justify-content:space-around;
     align-items:center;
-    flex-flow:row nowrap;
 }
 
 .btn a {
@@ -45,5 +47,17 @@ header {
 .btn a:hover {
     color: rgb(255, 154, 0);
     background-color:rgba(0, 0, 0, 0.75);
-    border-color:rgb(255, 154, 0)
+    border-color:rgb(255, 154, 0);
+}
+
+.logo-link:hover {
+>.logo-pic {
+    border:1.5px solid rgb(255, 154, 0);
+}
+
++ .navmenu li:first-child a {
+    color: rgb(255, 154, 0);
+    background-color:rgba(0, 0, 0, 0.75);
+    border-color:rgb(255, 154, 0); 
+}
 }
